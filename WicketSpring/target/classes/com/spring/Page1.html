@@ -1,0 +1,36 @@
+<!DOCTYPE html >
+<html xmlns:wicket="http://wicket.apache.org">
+	<head>
+	</head>
+		<body>
+<wicket:extend>
+    <h2>Organization Details</h2><br>
+     <div wicket:id="addorg">
+	<button type="button" class="btn btn-primary" >AddOrganization</button></div><br>
+<h3 Style="text-align:center"><label>List Of Employees</label>	</h3><br>
+   
+    <table border=1px align="center" style="text-align:center">
+    <thead>
+      <tr>
+      <th> Orgnization Id </th>
+      <th> Orgnization Name </th>
+      <th> No Of emp </th>
+       <th colspan="2"> Actions Performed</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr wicket:id="orgall">
+    <td wicket:id="d1"></td>
+    <td wicket:id="d2"></td>
+    <td wicket:id="d3"></td>
+    <td><input type="button" class="btn btn-primary" value="Update" wicket:id="updateorgnization"/></td>
+	<td> <input type="button" class="btn btn-danger" value="Delete" wicket:id="deleteorgnization"/></td>
+    </tr>
+    </tbody>
+    </table>
+    <br>
+     <span wicket:id="getbyOrgid"></span>
+  
+</wicket:extend>
+</body>
+</html>

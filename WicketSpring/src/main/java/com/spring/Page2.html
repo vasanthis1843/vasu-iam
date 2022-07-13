@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+     crossorigin="anonymous">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<wicket:extend>
+
+	<h2>Employee details</h2><br>
+	
+  <div wicket:id="addemp">
+	<button type="button" class="btn btn-primary" >addemployee</button></div><br>
+	
+<h3 Style="text-align:center"><label>List Of Employees</label>	</h3><br>
+	
+	<table border="1" align="center" style="text-align:center">
+	<thead>
+	  <tr>
+           <th> Employee id</th>
+           <th> Employee name</th>
+           <th>Employee age</th>
+           <th> Employee role</th>
+           <th>Employee Adress</th>
+           <th> select Organization</th>
+           <th colspan="2"> Actions Performed</th>
+        </tr>
+	</thead>
+		<tbody>
+		<tr wicket:id="empgetall">
+			<td wicket:id="data1"></td>
+			<td wicket:id="data2"></td>
+			<td wicket:id="data3"></td>
+			<td wicket:id="data4"></td>
+			<td wicket:id="data5"></td>
+			
+		    <td><input type="button" class="btn btn-primary" value="Update" wicket:id="update"/></td>
+			<td> <input type="button" class="btn btn-danger" value="Delete" wicket:id="delete"/>
+			</td>
+	
+		</tr>
+		</tbody>
+	</table>
+	
+	
+	 <!-- <span wicket:id="empid"></span>-->
+</wicket:extend>
+
+</body>
+</html>
